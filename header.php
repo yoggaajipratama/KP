@@ -5,9 +5,10 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>StikerMania | Dashboard</title>
-  <link rel="stylesheet" type="text/css" href="glossy.css">
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link rel="stylesheet" type="text/css" href="kertas.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- Bootstrap 3.3.7 -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <!-- Font Awesome -->
@@ -22,7 +23,6 @@
   <link rel="stylesheet" href="text/css" href="css/vendor/daterangepicker/daterangepicker.css">
   <link rel="stylesheet" href="text/css" href="css/util.css">
   <link rel="stylesheet" href="text/css" href="css/main.css">
-  <link rel="stylesheet" href="text/css" href="css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="bower_components/Ionicons/css/ionicons.min.css">
