@@ -1,3 +1,45 @@
-.glossy{
+body{
+	font-family: Ubuntu;
+}
+.deep{
+	padding-top: 5%;
 	background-image: url("img/glossy.png");
+	width: 320px; height: 320px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.deep2{
+	padding-top: 5%;
+	background-image: url("img/glossy.png");
+	width: 320px; height: 320px;
+	font-weight: 32px;
+	font-size: 62pt;
+	color: transparent;
+	background-repeat: no-repeat;
+}
+.right{
+	padding-top: 5%;
+	background-image: url("img/mate.jpg");
+	width: 320px; height: 320px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.right2{
+	padding-top: 5%;
+	background-image: url("img/mate.jpg");
+	width: 320px; height: 320px;
+	font-weight: 32px;
+	font-size: 62pt;
+	color: transparent;
+	background-repeat: no-repeat;
+}
+.deep2:hover{
+	color: white;
+	font-weight: bold;
+	font-size: 32pt;
+}
+.right2:hover{
+	color: white;
+	font-weight: bold;
+	font-size: 32pt;
 }

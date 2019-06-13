@@ -1,19 +1,35 @@
 <?php include "header.php"; ?>
 	<div class="container">
-  		<h3>KERTAS</h3>  
-  		<div style="background-image: url('img/glossy.png'); width: 320px; height: 320px; background-size: cover;">
-            <div style="padding-top: 50%;">
-              <center>
-                <button class="btn-warning">GLOSSY</button>
-              </center>
+    <h2>JENIS KERTAS</h2>
+    <table class="table" style="border: solid;">
+      <tr>
+        <th>
+          <div class="deep">
+            <div class="container">
+              <div class="deep2">
+                <center>
+                  <p>GLOSSY</p>
+                </center>
+              </div>
             </div>
-      </div>
-  		<div>Stok Tersedia : </div> <br>
-  		<div>Terakhir Isi : </div>
-  		<h5><button class="w3-btn w3-border w3-jumbo">MATTE</button></h5>
-  		<div>Stok Tersedia : </div> <br>
-  		<div>Terakhir Isi : </div>
-	</div> 
-
-
+          </div>
+        </th>
+        <th>
+          <div class="right">
+            <div class="container">
+              <div class="right2">
+                <center>
+                  <p>MATE</p>
+                </center>
+              </div>
+            </div>
+          </div>
+        </th>
+      </tr>
+      <tr>
+        <td>Sisa kertas</td>
+        <td>Sisa kertas</td>
+      </tr>
+    </table>
+  </div>
 <?php include "footer.php"; ?>

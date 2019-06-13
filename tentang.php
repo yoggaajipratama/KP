@@ -1,4 +1,5 @@
-<?php include "header.php"; ?>
+<?php include 'header.php'; ?>
+<div class="a">jjjjjjjjjj</div>
 <h3><center>Stiker Mania</center></h3>
 <h3><center>Versi 1.0 2019</center></h3>
 <h3>Penjelasan Aplikasi</h3>
@@ -6,3 +7,4 @@
 <br>
 <br>
 <h3>Biodata Pembuat Aplikasi</h3>
+<?php include 'footer.php'; ?>
