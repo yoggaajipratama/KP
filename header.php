@@ -104,8 +104,7 @@
             <li class="active"><a href="tbs.php"><i class="fa fa-circle-o"></i> Transaksi belum selesai</a></li>
           </ul>
         </li>
-        <li class="active"><a href=""><i class="fa fa-history" aria-hidden="true"></i>Riwayat</a></li>
-        <li class="active"><a href="#"><i class="fa fa-user" aria-hidden="true"></i> <span>Member</span></a></li>
+        <li class="active"><a href="riwayat.php"><i class="fa fa-history" aria-hidden="true"></i>Riwayat</a></li>
         <li class="active"><a href="tentang.php"><i class="fa fa-info-circle" aria-hidden="true"></i> <span>Tentang</span></a></li>
       </ul>
     </section>
