@@ -1,9 +1,10 @@
 <?php include "header.php"; ?>
 <?php include "connection.php"; ?>
+
 	<div class="container">
 		<div class="container-fluid">
-			<a href=""><i class="fa fa-plus-square"> TAMBAH GAMBAR</i></a>
-			<form action="insert.php" method="post">
+			<h2>Tambah Gambar</h2>
+			<form action="insert.php" method="post" enctype="multipart/form-data">
 				<div class="table">
 					<table class="table"> 
 						<tr>
@@ -24,15 +25,15 @@
 						</tr>
 						<tr>
 							<td>
-								<button class="btn btn-success" type="submit">submit</button>
+								<button class="btn btn-success" type="submit" name="upload">Submit</button>
 							</td>
 						</tr>
 					</table>
 				</div>
 			</form>
 
-			<a href=""><i class="fa fa-plus-square"> HAPUS GAMBAR</i></a>
-			<div class="table">
+			<h2>Pesanan Masuk</h2>
+		<div class="table">
 				<table class="table"> 
 					<tr>
 						<th>Nama</th>
@@ -40,12 +41,13 @@
 						<th>Gambar</th>
 						<th>Status</th>
 					</tr>
-					<?php while($dt = mysqli_fetch_array($query)){ ?>
+					<?php while($row = mysqli_fetch_array($result)){ ?>
 					<tr>
-							<td><?= $dt['nama']; ?></td>
-							<td><?= $dt['tlp']; ?></td>
-							<td><?= $dt['gambar']; ?></td>
-							<td><?= $dt['status']; ?></td>
+							<td><?= $row['nama']; ?></td>
+							<td><?= $row['tlp']; ?></td>
+							<td><img src="images/<?= $row['image']?>" style='width:auto;height:75px;'></td>
+
+							<td><?= $row['status']; ?></td>
 					</tr>
 					<?php } ?>
 				</table>
