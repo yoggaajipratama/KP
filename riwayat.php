@@ -4,7 +4,7 @@
 		<div class="table">
 			<table class="table">
 				<tr>
-					<th>ID</th>
+					<th>ID transaksi</th>
 					<th>Tanggal Pembelian</th>
 					<th>Status</th>
 				</tr>

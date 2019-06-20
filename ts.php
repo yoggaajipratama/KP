@@ -5,7 +5,7 @@
 			<div class="table" style="width: 90%;">
 				<table class="table table-striped"> 
 					<tr>
-						<th>ID</th>
+						<th>ID transaksi</th>
 						<th>Nama</th>
 						<th>Nomor telepon</th>
 						<th>Nama gambar</th>
