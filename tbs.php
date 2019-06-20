@@ -28,7 +28,7 @@
 								<td><?= $key['jenis_kertas']; ?></td>
 								<td>~</td>
 								<td>
-									<input type="submit" name="submit" onclick="return confirm('Selesaikan pesanan? ')" value="Selesai" class="btn btn-danger">
+									<input type="submit" name="selesai" onclick="return confirm('Selesaikan pesanan? ')" value="Selesai" class="btn btn-danger">
 								</td>
 							</tr>
 						</form>

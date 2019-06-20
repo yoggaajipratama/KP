@@ -14,7 +14,7 @@
 	$status_selesai = mysqli_query($sql, "SELECT * FROM dt_stkr WHERE status = '$selesai' ORDER BY id DESC");
 	$status_bselesai = mysqli_query($sql, "SELECT * FROM dt_stkr WHERE status = '$bselesai' ORDER BY id DESC");
 
-	if ($_POST['submit']) {
+	if ($_POST['selesai']) {
 		$id = $_POST['id'];
 		$query = "UPDATE `dt_stkr` SET `status` = 'Selesai' WHERE `dt_stkr`.`id` = '$id';";
 		$transaksi_selesai = mysqli_query($sql, $query);
