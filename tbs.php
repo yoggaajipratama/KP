@@ -1,8 +1,8 @@
 <?php include "header.php"; ?>
 	<div class="container">
-		<div class="container-fluid">
+		<div class="container-fluid" style="margin-right: 4%;">
 			<H3>TRANSAKSI BELUM SELESAI</H3>
-			<div class="table" style="width: 90%;">
+			<div class="table">
 				<table class="table table-striped"> 
 					<tr>
 						<th>ID</th>
