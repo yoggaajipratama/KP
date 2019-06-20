@@ -8,13 +8,13 @@
 					<th>Tanggal Pembelian</th>
 					<th>Status</th>
 				</tr>
+				<?php foreach ($status_selesai as $key): ?>
 				<tr>
-					<?php foreach ($status_selesai as $key): ?>
 						<td><?= $key['id']; ?></td>
 						<td><?= $key['tanggal']; ?></td>
 						<td><?= $key['status']; ?></td>
-					<?php endforeach ?>
 				</tr>
+				<?php endforeach ?>
 			</table>
 		</div>
 	</div>
