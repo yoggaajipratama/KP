@@ -5,10 +5,12 @@
 		$tlp = $_POST['tlp'];
 		$jk = $_POST['jenis_kertas'];
 		$warna = $_POST['warna_kertas'];
-
 		$image = $_FILES['image']['name'];
+		$id = $nama.$tlp."_".$image;
+		$tanggal = date("Y-m-d H:i:s");
+
 		$target = "images/" . basename($image);
-		$insert = mysqli_query($sql, "INSERT INTO dt_stkr VALUES (NULL,'$nama', '$tlp', '$jk', '$warna', '$image', 'Belum selesai')");
+		$insert = mysqli_query($sql, "INSERT INTO dt_stkr VALUES ('$id', '$nama', '$tlp', '$jk', '$warna', '$image', 'Belum selesai', '$tanggal')");
 		
 		if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
 			$msg = "Image uploaded successfully";
