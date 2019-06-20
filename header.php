@@ -51,7 +51,7 @@
     <!-- Logo -->
     <a href="index2.html" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
-      <span class="logo-mini"><b>A</b>LT</span>
+      <span class="logo-mini"><b>STM</b></span>
       <!-- logo for regular state and mobile devices -->
       <span class="logo-lg"><b>Admin</b>StikerMania</span>
     </a>
@@ -64,10 +64,6 @@
 
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
-          <!-- Control Sidebar Toggle Button -->
-          <li>
-            <a href="#" data-toggle="control-sidebar"><span>SIGN OUT</span></a>
-          </li>
         </ul>
       </div>
     </nav>
@@ -104,7 +100,7 @@
             <li class="active"><a href="ts.php"><i class="fa fa-circle-o"></i> Transaksi selesai</a></li>
           </ul>
         </li>
-        <li class="active"><a href="riwayat.php"><i class="fa fa-history" aria-hidden="true"></i>Riwayat</a></li>
+        <li class="active"><a href="riwayat.php"><i class="fa fa-history" aria-hidden="true"></i> <span>Riwayat</span></a></li>
         <li class="active"><a href="tentang.php"><i class="fa fa-info-circle" aria-hidden="true"></i> <span>Tentang</span></a></li>
       </ul>
     </section>

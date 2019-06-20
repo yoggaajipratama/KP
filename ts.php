@@ -5,19 +5,21 @@
 			<div class="table" style="width: 90%;">
 				<table class="table table-striped"> 
 					<tr>
+						<th>ID</th>
 						<th>Nama</th>
-						<th>Nomor Telepon</th>
-						<th>Nama Gambar</th>
+						<th>Nomor telepon</th>
+						<th>Nama gambar</th>
 						<th>Status</th>
 					</tr>
+					<?php foreach ($status_selesai as $key): ?>
 					<tr>
-						<?php foreach ($status_selesai as $key): ?>
+							<td><?= $key['id']; ?></td>
 							<td><?= $key['nama']; ?></td>
 							<td><?= $key['tlp']; ?></td>
 							<td><?= $key['image']; ?></td>
 							<td><?= $key['status']; ?></td>
-						<?php endforeach ?>
 					</tr>
+					<?php endforeach ?>
 				</table>
 			</div>
 		</div>

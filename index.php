@@ -65,7 +65,7 @@
 					<td><img src="images/<?= $row['image']?>" style='width:auto;height:75px;'></td>
 					<td><?= $row['status']; ?></td>
 					<td>
-						<a href="delete.php?id=<?= $row['id']; ?>">Batalkan Pesanan</a>
+						<a href="delete.php?id=<?= $row['id']; ?>" onclick="return confirm('Batalkan pesanan? ')">Batalkan Pesanan</a>
 					</td>
 				</tr>
 				<?php } ?>
