@@ -16,7 +16,7 @@
 						<th>Ubah status</th>
 					</tr>
 					<?php foreach ($status_bselesai as $key): ?>
-						<form action="connection.php" method="post">
+						<form action="transaksi.php" method="post">
 							<tr>
 								<input type="hidden" name="id" value="<?= $key['id']; ?>">
 								<td><?= $key['id']; ?></td>
@@ -28,7 +28,7 @@
 								<td><?= $key['jenis_kertas']; ?></td>
 								<td>~</td>
 								<td>
-									<input type="submit" name="selesai" onclick="return confirm('Selesaikan pesanan? ')" value="Selesai" class="btn btn-danger">
+									<input type="submit" name="submit" onclick="return confirm('Selesaikan pesanan? ')" value="submit" class="btn btn-danger">
 								</td>
 							</tr>
 						</form>
