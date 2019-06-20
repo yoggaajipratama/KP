@@ -100,8 +100,8 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="ts.php"><i class="fa fa-circle-o"></i> Transaksi selesai</a></li>
             <li class="active"><a href="tbs.php"><i class="fa fa-circle-o"></i> Transaksi belum selesai</a></li>
+            <li class="active"><a href="ts.php"><i class="fa fa-circle-o"></i> Transaksi selesai</a></li>
           </ul>
         </li>
         <li class="active"><a href="riwayat.php"><i class="fa fa-history" aria-hidden="true"></i>Riwayat</a></li>

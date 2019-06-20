@@ -8,7 +8,9 @@
 				<table class="table"> 
 					<tr>
 						<th>Nama</th>
-						<th>Nomor Telepon</th>
+						<th>Nomor telepon</th>
+						<th>Jenis kertas</th>
+						<th>Warna kertas</th>
 						<th>Gambar</th>
 					</tr>
 					<tr>
@@ -17,6 +19,20 @@
 						</td>
 						<td>
 							<input type="text" name="tlp" placeholder="Nomor Telepon">
+						</td>
+						<td>
+							<select name="jenis_kertas">
+								<?php foreach ($jenis_kertas as $jk): ?>
+									<option><?= $jk['jenis_kertas']; ?></option>
+								<?php endforeach ?>
+							</select>
+						</td>
+						<td>
+							<select name="warna_kertas">
+								<?php foreach ($warna_kertas as $wk): ?>
+									<option><?= $wk['warna_kertas']; ?></option>
+								<?php endforeach ?>
+							</select>
 						</td>
 						<td>
 							<input type="file" name="image">

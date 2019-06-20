@@ -2,19 +2,21 @@
 	<div class="container">
 		<div class="container-fluid">
 			<H3>TRANSAKSI SELESAI</H3>
-			<div class="table">
-				<table class="table"> 
+			<div class="table" style="width: 90%;">
+				<table class="table table-striped"> 
 					<tr>
 						<th>Nama</th>
 						<th>Nomor Telepon</th>
-						<th>Gambar</th>
+						<th>Nama Gambar</th>
 						<th>Status</th>
 					</tr>
 					<tr>
-						<td>Image 1</td>
-						<td>0898978675656</td>
-						<td>Image</td>
-						<td>Selesai</td>
+						<?php foreach ($status_selesai as $key): ?>
+							<td><?= $key['nama']; ?></td>
+							<td><?= $key['tlp']; ?></td>
+							<td><?= $key['image']; ?></td>
+							<td><?= $key['status']; ?></td>
+						<?php endforeach ?>
 					</tr>
 				</table>
 			</div>

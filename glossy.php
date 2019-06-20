@@ -10,10 +10,12 @@
 			</tr>
 			<tr>
 				<td><input type="date" name="tgl"></td>
-				<td><input type="number" step="number" name="jml" value="0" placeholder="0"></td>
+				<td><input type="number" step="number" name="jml" min="0" placeholder="0"></td>
 				<td>
 					<select>
-						<option>Hitam</option>
+						<?php foreach ($warna_tinta as $key): ?>
+							<option><?= $key['warna_kertas']; ?></option>
+						<?php endforeach ?>
 					</select>
 				</td>
 			</tr>

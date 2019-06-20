@@ -12,10 +12,12 @@
 						<th>Warna</th>
 					<tr>
 						<td><input type="date" name="date"></td>
-						<td><input type="number" name="number"></td>
+						<td><input type="number" name="number" min="0" placeholder="0"></td>
 						<td>
 							<select>
-								<option>Glossy</option>
+								<?php foreach ($warna_tinta as $key): ?>
+									<option><?= $key['warna_tinta']; ?></option>
+								<?php endforeach ?>
 							</select>
 						</td>
 					</tr>	
