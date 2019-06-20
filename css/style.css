@@ -1,3 +1,91 @@
 .a{
-	color: red;
+	margin-top: 50px;
+	float : 30px;
+	  }
+}
+
+.hr { 
+    display: block;
+    margin-before: -5px;
+    margin-after: -5px;
+    margin-start: auto;
+    margin-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+
+
+h3{
+	font-size: 30px;
+}
+
+.client_testimonials{
+
+}
+
+.client_testimonials h3{
+	color: #636363;
+	font-family: "LatoBold", arial;
+	font-size: 30px;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	margin-bottom: 60px;
+}
+
+
+
+
+/*  Testimonials  */
+
+.testimonials{
+	display: inline-block;
+	width: 260px;
+	height: auto;
+	background: #f9f8f8;
+	position: relative;
+	padding: 30px 20px;
+	margin-right: 200px;
+	margin-bottom: 120px;
+	color: #909090;
+	font-family: "LatoRegular", arial;
+	font-size: 16px;
+	line-height: 20px;
+}
+
+.testimonials:last-child{
+	margin-right: 0;
+}
+
+.testimonials blockquote{
+	margin-bottom: 25px;
+}
+
+.testimonials a.author{
+	display: block;
+	color: #7e7d7d;
+	font-family: "Latobold", arial;
+	font-weight: bold;
+	font-size: 5px;
+	margin-top: 25px;
+	text-decoration: none;
+}
+
+.testimonials a.author:hover{
+	color: #5c5c5c;
+}
+
+.testimonials img.avatar{
+	position: absolute;
+	border-radius: 100px;
+	border: 4px #ffffff solid;
+	bottom: -30px;
+	right: 0;
+}
+
+.wrapper{
+	width: absolute;
+	height: auto;
+	margin: 0 auto;
 }
