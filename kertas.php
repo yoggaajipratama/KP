@@ -28,12 +28,24 @@
       </tr>
       <tr>
         <td><br>
-          <h4>Sisa kertas : </h4>
-          <h4>Pengisian terakhir : </h4>
+          <h4 style="text-decoration: underline;"><b>Sisa kertas : </b></h4>
+          <p style="margin-left: 10px"><b>Hitam: </b></p>
+          <p style="margin-left: 10px"><b>Merah: </b></p>
+          <p style="margin-left: 10px"><b>Putih: </b></p>
+          <p style="margin-left: 10px"><b>Kuning: </b></p>
+          <p style="margin-left: 10px"><b>Biru: </b></p>
+          <p style="margin-left: 10px"><b>Hijau: </b></p>
+          <p style="margin-left: 10px"><b>Pengisian terakhir : </b></p>
         </td>
         <td><br>
-          <h4>Sisa kertas : </h4>
-          <h4>Pengisian terakhir : </h4>
+          <h4 style="text-decoration: underline;"><b>Sisa kertas : </b></h4>
+          <p style="margin-left: 10px"><b>Hitam: </b></p>
+          <p style="margin-left: 10px"><b>Merah: </b></p>
+          <p style="margin-left: 10px"><b>Putih: </b></p>
+          <p style="margin-left: 10px"><b>Kuning: </b></p>
+          <p style="margin-left: 10px"><b>Biru: </b></p>
+          <p style="margin-left: 10px"><b>Hijau: </b></p>
+          <p style="margin-left: 10px"><b>Pengisian terakhir : </b></p>
         </td>
       </tr>
     </table>
