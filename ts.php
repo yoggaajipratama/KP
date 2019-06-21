@@ -13,11 +13,11 @@
 					</tr>
 					<?php foreach ($status_selesai as $key): ?>
 					<tr>
-							<td><?= $key['id']; ?></td>
-							<td><?= $key['nama']; ?></td>
-							<td><?= $key['tlp']; ?></td>
-							<td><?= $key['image']; ?></td>
-							<td><?= $key['status']; ?></td>
+						<td><?= $key['id']; ?></td>
+						<td><?= $key['nama']; ?></td>
+						<td><?= $key['tlp']; ?></td>
+						<td><?= $key['image']; ?></td>
+						<td><?= $key['status']; ?></td>
 					</tr>
 					<?php endforeach ?>
 				</table>

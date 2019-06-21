@@ -1,8 +1,8 @@
 <?php include "header.php"; ?>
 	<div class="container">
-		<div class="container-fluid" style="margin-right: 4%;">
+		<div class="container-fluid">
 			<H3>TRANSAKSI BELUM SELESAI</H3>
-			<div class="table">
+			<div class="table" style="width: 90%;">
 				<table class="table table-striped"> 
 					<tr>
 						<th>ID transaksi</th>
