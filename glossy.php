@@ -2,22 +2,29 @@
 	<div class="container">
 		<h1>KERTAS GLOSSY</h1>
 		<h3 style="text-decoration: underline;">Pengisian kertas</h3>
-		<table class="table table-striped">
-			<form action="insert.php" method="post">
-				<tr>
-					<th class="active">Warna</th>
-					<th class="active">Jumlah</th>
-				</tr>
-				<?php foreach ($warna_tinta as $key): ?>
+		<table class="table">
+			<tr>
+				<th>Warna</th>
+				<th>Tambahan</th>
+			</tr>
+			<form action="insert_glossy.php" method="post">
 				<tr>
 					<td>
-						<?= $key['warna_kertas']; ?>
+						<select name="warna">
+						<?php foreach ($kertas as $key): ?>
+							<option><?= $key['warna_kertas']; ?></option>
+						<?php endforeach ?>
+						</select>
 					</td>
-					<td><input type="number" step="number" name="jml" min="0" placeholder="0"></td>
+				
+					<td>
+						<input type="number" step="number" name="jml" min="0" placeholder="0">
+					</td>
 				</tr>
-				<?php endforeach ?>
 				<tr>
-					<td><button class="btn btn-success" type="submit" name="kertas_glossy">Kirim</button></td>
+					<td>
+						<input type="submit" name="submit" class="btn btn-success">
+					</td>
 				</tr>
 			</form>
 		</table>

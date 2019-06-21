@@ -19,12 +19,4 @@
 			$msg = "Failed to upload image";
 		}
 	}
-
-	if (isset($_POST['kertas_glossy']) {
-		$tanggal = date("Y-m-d H:i:s");
-		$jml = $_POST['jml'];
-		$warna = $_POST['warna'];
-
-		$kirim = mysqli_query($sql, "");
-	}
 ?>
