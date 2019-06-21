@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Sticker Management | Dashboard</title>
+  <link rel="shortcut icon" href="img/logo.png">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" type="text/css" href="css/kertas.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -36,7 +37,10 @@
   <header class="main-header">
     <a href="index2.html" class="logo">
       <span class="logo-mini"><b>STM</b></span>
-      <span class="logo-lg"><b>Sticker Management</b></span>
+      <span class="logo-lg">
+        <b>Sti-Man</b>
+        <img src="img/logo.png" width="32px" height="32px">
+      </span>
     </a>
     <nav class="navbar navbar-static-top">
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
