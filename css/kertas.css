@@ -11,7 +11,7 @@ a:hover{
 }
 .deep{
 	padding-top: 5%;
-	background-image: url("img/glossy.png");
+	background-image: url("../img/glossy.png");
 	width: 320px; height: 320px;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -19,7 +19,7 @@ a:hover{
 }
 .deep2{
 	padding-top: 5%;
-	background-image: url("img/glossy.png");
+	background-image: url("../img/glossy.png");
 	width: 320px; height: 320px;
 	font-weight: 32px;
 	font-size: 62pt;
@@ -29,7 +29,7 @@ a:hover{
 }
 .right{
 	padding-top: 5%;
-	background-image: url("img/mate.jpg");
+	background-image: url("../img/mate.jpg");
 	width: 320px; height: 320px;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -37,7 +37,7 @@ a:hover{
 }
 .right2{
 	padding-top: 5%;
-	background-image: url("img/mate.jpg");
+	background-image: url("../img/mate.jpg");
 	width: 320px; height: 320px;
 	font-weight: 32px;
 	font-size: 62pt;
