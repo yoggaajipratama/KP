@@ -3,7 +3,7 @@
 		<div class="container-fluid">
 			<H3>TRANSAKSI BELUM SELESAI</H3>
 			<div class="table" style="width: 90%;">
-				<table class="table table-striped"> 
+				<table class="table table-striped">
 					<tr>
 						<th>ID transaksi</th>
 						<th>Nama</th>
