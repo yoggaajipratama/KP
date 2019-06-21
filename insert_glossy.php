@@ -4,11 +4,11 @@
 		$warna = $_POST['warna'];
 		$jml = $_POST['jml'];
 		$id = $_POST['id'];
+		$tanggal = date("Y-m-d H:i:s");
 
-		/*$query = mysqli_query($sql, "UPDATE sKertas SET jml = '$jml' WHERE warna_kertas = '$warna'");*/
-		$query = mysqli_query($sql, "UPDATE sKertas SET jml = '$jml' WHERE id = '$id'");
+		$query = mysqli_query($sql, "UPDATE sKertas SET jml = jml+'$jml', tgl = '$tanggal' WHERE warna_kertas = '$warna'");
 		if ($query) {
-			echo "Berhasil";
+			header('Location:glossy.php');
 		}else{
 			echo "Gagal";
 		}

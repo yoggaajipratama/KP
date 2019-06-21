@@ -28,24 +28,29 @@
       </tr>
       <tr>
         <td><br>
-          <h4 style="text-decoration: underline;"><b>Sisa kertas : </b></h4>
-          <p style="margin-left: 10px"><b>Hitam: </b></p>
-          <p style="margin-left: 10px"><b>Merah: </b></p>
-          <p style="margin-left: 10px"><b>Putih: </b></p>
-          <p style="margin-left: 10px"><b>Kuning: </b></p>
-          <p style="margin-left: 10px"><b>Biru: </b></p>
-          <p style="margin-left: 10px"><b>Hijau: </b></p>
-          <p style="margin-left: 10px"><b>Pengisian terakhir : </b></p>
+          <h4><b>Sisa kertas : </b></h4>
+            <div>
+              <table style="width: 55%;" class="table">
+                <tr>
+                  <th><b style="text-decoration: underline;">Nomor</b></th>
+                  <th><b style="text-decoration: underline;">Warna</b></th>
+                  <th><b style="text-decoration: underline;">Sisa</b></th>
+                  <th><b style="text-decoration: underline;">Pengisi terakhir</b></th>
+                </tr>
+                <?php $n=1; ?>
+                <?php foreach ($kertasglossy as $key): ?>
+                <tr>
+                  <td><?= $n++; ?></td>
+                  <td><?= $key['warna_kertas']; ?></td>
+                  <td><?= $key['jml']; ?></td>
+                  <td><?= $key['tgl']; ?></td>
+                </tr>
+                <?php endforeach ?>
+              </table>
+            </div>
         </td>
         <td><br>
-          <h4 style="text-decoration: underline;"><b>Sisa kertas : </b></h4>
-          <p style="margin-left: 10px"><b>Hitam: </b></p>
-          <p style="margin-left: 10px"><b>Merah: </b></p>
-          <p style="margin-left: 10px"><b>Putih: </b></p>
-          <p style="margin-left: 10px"><b>Kuning: </b></p>
-          <p style="margin-left: 10px"><b>Biru: </b></p>
-          <p style="margin-left: 10px"><b>Hijau: </b></p>
-          <p style="margin-left: 10px"><b>Pengisian terakhir : </b></p>
+          <h4><b>Sisa kertas : </b></h4>
         </td>
       </tr>
     </table>
