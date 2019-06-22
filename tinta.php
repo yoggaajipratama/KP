@@ -7,25 +7,20 @@
 		<div class="container">
 			<h3> Pengisian Ulang</h3>
 				<table class="table">
-						<th>Tanggal</th>
-						<th>Jumlah</th>
 						<th>Warna</th>
+						<th>Jumlah</th>
+						<th>Tambahkan</th>
 					<tr>
-						<td><input type="date" name="date"></td>
-						<td><input type="number" name="number" min="0" placeholder="0"></td>
 						<td>
-							<select>
+							<select name="warna">
 								<?php foreach ($warna_tinta as $key): ?>
 									<option><?= $key['warna_tinta']; ?></option>
 								<?php endforeach ?>
 							</select>
 						</td>
+						<td><input type="number" name="jml" min="0" placeholder="0"></td>
+						<td><button class="btn btn-success" type="submit">Tambahkan(+)</button></td>
 					</tr>	
-					<div>
-						<td>
-							<button class="btn-success" type="submit">submit</button>
-						</td>
-					</div>	
 				</table>
 			<h3> Prediksi Tinta Habis</h3>
 				<table class="table">

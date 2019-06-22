@@ -10,7 +10,7 @@
 	
 	$jenis_kertas = mysqli_query($sql, "SELECT * FROM jenis_kertas");
 	$warna_kertas = mysqli_query($sql, "SELECT * FROM warna");
-	$warna_tinta = mysqli_query($sql, "SELECT * FROM warna");
+	$warna_tinta = mysqli_query($sql, "SELECT * FROM sTinta");
 	
 	$result = mysqli_query($sql, "SELECT * FROM dt_stkr WHERE status = '$bselesai' ORDER BY id DESC");
 	$kertasmatte = mysqli_query($sql, "SELECT * FROM sKertas WHERE jenis = '$matte' ORDER BY tgl DESC");
