@@ -14,7 +14,7 @@
 		
 		if (move_uploaded_file($_FILES['image']['tmp_name'], $target)) {
 			$msg = "Image uploaded successfully";
-			header("Location: index.php");
+			header("Location: ../index.php");
 		} else {
 			$msg = "Failed to upload image";
 		}

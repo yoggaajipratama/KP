@@ -7,7 +7,7 @@
 				<th>Warna</th>
 				<th>Tambahkan</th>
 			</tr>
-			<form action="insert_glossy.php" method="post">
+			<form action="db/insert_glossy.php" method="post">
 				<tr>
 					<td>
 						<select name="warna">
@@ -30,29 +30,31 @@
 		</table>
 		<h3 style="text-decoration: underline;">Pengisian terakhir</h3>
 		<p>(Diurutkan berdasarkan pengisian terakhir)</p>
-		<table class="table table-stripped">
-			<tr>
-				<th class="active">Nomor</th>
-				<th class="active">Tanggal</th>
-				<th class="active">Warna</th>
-				<th class="active">Sisa</th>
-			</tr>
-			<?php $n=1; ?>
-			<?php foreach ($kertasglossy as $key): ?>
-			<tr>
-					<td><?= $n++; ?></td>
-					<td><?= $key['tgl']; ?></td>
-					<td><?= $key['warna_kertas']; ?></td>
-					<td><?= $key['jml']; ?></td>
-			</tr>
-			<?php endforeach ?>
-		</table>
+		<div style="width: 80%;">
+			<table class="table table-striped">
+				<tr>
+					<th>Nomor</th>
+					<th>Tanggal</th>
+					<th>Warna</th>
+					<th>Sisa</th>
+				</tr>
+				<?php $n=1; ?>
+				<?php foreach ($kertasglossy as $key): ?>
+					<tr>
+						<td><?= $n++; ?></td>
+						<td><?= $key['tgl']; ?></td>
+						<td><?= $key['warna_kertas']; ?></td>
+						<td><?= $key['jml']; ?></td>
+					</tr>
+				<?php endforeach ?>
+			</table>
+		</div>
 		<h3 style="text-decoration: underline;">Prediksi kertas habis</h3>
-		<table class="table table-stripped">
+		<table class="table table-striped">
 			<tr>
-				<th class="active">Nomor</th>
-				<th class="active">Tanggal</th>
-				<th class="active">Warna</th>
+				<th>Nomor</th>
+				<th>Tanggal</th>
+				<th>Warna</th>
 			</tr>
 			<tr>
 				<td></td>

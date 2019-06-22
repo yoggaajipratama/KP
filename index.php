@@ -3,7 +3,7 @@
 <div class="container">
 	<div class="container-fluid">
 		<h2>Tambah Gambar</h2>
-		<form action="insert.php" method="post" enctype="multipart/form-data">
+		<form action="db/insert.php" method="post" enctype="multipart/form-data">
 			<div class="table">
 				<table class="table"> 
 					<tr>

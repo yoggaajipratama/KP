@@ -9,7 +9,7 @@
 
 
 	if($delete){
-  		header('Location: index.php');
+  		header('Location: ../index.php');
 	}else{
 	    echo "Hapus data gagal";
 	}

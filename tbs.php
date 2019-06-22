@@ -16,7 +16,7 @@
 						<th>Ubah status</th>
 					</tr>
 					<?php foreach ($status_bselesai as $key): ?>
-						<form action="transaksi.php" method="post">
+						<form action="db/transaksi.php" method="post">
 							<tr>
 								<input type="hidden" name="id" value="<?= $key['id']; ?>">
 								<td><?= $key['id']; ?></td>

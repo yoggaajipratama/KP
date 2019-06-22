@@ -8,7 +8,7 @@
 
 		$query = mysqli_query($sql, "UPDATE sKertas SET jml = jml+'$jml', tgl = '$tanggal' WHERE warna_kertas = '$warna' AND jenis = 'Glossy'");
 		if ($query) {
-			header('Location:glossy.php');
+			header('Location:../glossy.php');
 		}else{
 			echo "Gagal";
 		}
