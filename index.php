@@ -1,5 +1,5 @@
 <?php include "header.php"; ?>
-<?php include "connection.php"; ?>
+
 <div class="container">
 	<div class="container-fluid">
 		<h2>Tambah Gambar</h2>

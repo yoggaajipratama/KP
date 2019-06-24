@@ -11,8 +11,6 @@
   <link rel="stylesheet" type="text/css" href="css/js/caret.js">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link rel="stylesheet" href="components/bootstrap/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="components/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/images/icons/favicon.ico">
   <link rel="stylesheet" href="text/css" href="css/fonts/iconic/css/material-design-iconic-font.min.css">
   <link rel="stylesheet" href="text/css" href="css/vendor/animate/animate.css">
@@ -22,7 +20,6 @@
   <link rel="stylesheet" href="text/css" href="css/vendor/daterangepicker/daterangepicker.css">
   <link rel="stylesheet" href="text/css" href="css/util.css">
   <link rel="stylesheet" href="text/css" href="css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="components/Ionicons/css/ionicons.min.css">
   <link rel="stylesheet" href="dist/css/AdminLTE.min.css">
   <link rel="stylesheet" href="dist/css/skins/_all-skins.min.css">
@@ -32,6 +29,10 @@
   <link rel="stylesheet" href="components/bootstrap-daterangepicker/daterangepicker.css">
   <link rel="stylesheet" href="plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+  <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="Component/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -45,7 +46,6 @@
     </a>
     <nav class="navbar navbar-static-top">
       <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button">
-        <span class="sr-only">Toggle navigation</span>
       </a>
       <div class="navbar-custom-menu">
         <ul class="nav navbar-nav">
@@ -59,7 +59,7 @@
         <li class="active"><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i> <span>Beranda</span></a></li>
          <li class="active treeview">
           <a href="#subjb" aria-expanded="false">
-            <i class="fa fa-dashboard"></i> <span>Jenis Barang</span>
+            <i class="fas fa-tools"></i> <span>Jenis Barang</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
@@ -72,18 +72,19 @@
 
         <li class="active treeview">
           <a href="#">
-            <i class="fa fa-dashboard"></i> <span>Transaksi</span>
+            <i class="far fa-money-bill-alt"></i> <span>Transaksi</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="tbs.php"><i class="fa fa-circle-o"></i> Transaksi belum selesai</a></li>
-            <li class="active"><a href="ts.php"><i class="fa fa-circle-o"></i> Transaksi selesai</a></li>
+            <li class="active"><a href="tbs.php"><i class="material-icons" style="font-size:20px">&#xe25c;</i> Transaksi belum selesai</a></li>
+            <li class="active"><a href="ts.php"><i class="material-icons" style="font-size:20px">&#xe227;</i> Transaksi selesai</a></li>
           </ul>
         </li>
 
         <li class="active"><a href="riwayat.php"><i class="fa fa-history" aria-hidden="true"></i> <span>Riwayat</span></a></li>
+        <li class="active"><a href="cetak.php"><i class="fas fa-print" aria-hidden="true"></i> <span>Cetak</span></a></li>
         <li class="active"><a href="tentang.php"><i class="fa fa-info-circle" aria-hidden="true"></i> <span>Tentang</span></a></li>
       </ul>
     </section>
