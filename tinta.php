@@ -37,10 +37,15 @@
 			<div class="table">
 				<table class="table">
 					<tr>
-						<th>Nomor</th>
 						<th>Warna</th>
-						<th>Keterangan</th>
-					</tr>				
+						<th>Sisa</th>
+					</tr>
+					<?php foreach ($warna_tinta as $key): ?>
+						<tr>
+							<td><?= $key['warna_tinta'] ?></td>
+							<td><?= $key['jml'] ?></td>
+						</tr>
+					<?php endforeach ?>
 				</table>
 			</div>
 			</div>
