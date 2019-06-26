@@ -1,5 +1,5 @@
 <?php 
-	$sql = mysqli_connect("localhost", "root", "123", "stiker");
+	$sql = mysqli_connect("localhost", "root", "", "stiker");
 	if (!$sql) {
 		echo "Gagal";
 	}
