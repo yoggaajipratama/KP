@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jun 24, 2019 at 02:10 PM
+-- Generation Time: Jun 26, 2019 at 11:23 AM
 -- Server version: 5.7.26-0ubuntu0.16.04.1
 -- PHP Version: 7.0.33-7+ubuntu16.04.1+deb.sury.org+1
 
@@ -76,7 +76,7 @@ CREATE TABLE `sKertas` (
 
 INSERT INTO `sKertas` (`id`, `warna_kertas`, `jml`, `jenis`, `tgl`) VALUES
 (1, 'Hitam', 7, 'Glossy', '2019-06-24 11:13:20'),
-(2, 'Biru', 5, 'Glossy', '2019-06-21 20:23:08'),
+(2, 'Biru', 6, 'Glossy', '2019-06-24 21:37:39'),
 (3, 'Merah', 8, 'Glossy', '2019-06-22 19:37:09'),
 (4, 'Kuning', 4, 'Glossy', '2019-06-21 21:10:34'),
 (5, 'Hijau', 9, 'Glossy', '2019-06-21 20:22:50'),
