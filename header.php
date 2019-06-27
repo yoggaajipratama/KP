@@ -8,6 +8,7 @@
   <link rel="shortcut icon" href="img/logo.png">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <link rel="stylesheet" type="text/css" href="css/paper.css">
+  <link rel="stylesheet" type="text/css" href="css/cetak.css">
   <link rel="stylesheet" type="text/css" href="css/kertas.css">
   <link rel="stylesheet" type="text/css" href="css/js/caret.js">
   <link rel="stylesheet" type="text/css" href="css/style.css">
