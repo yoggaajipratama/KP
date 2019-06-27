@@ -1,33 +1,85 @@
 <?php include 'header.php'; ?>
     <table class="table">
         <tr>
-            <h1 style="text-decoration: underline;">PILIH WARNA KERTAS</h1>
+            <h1><b>PESANAN STIKER</b></h1>
         </tr>
         <tr>
             <th>
-                <div style="background-color: blue; border: 1; width: 132px; height: 132px; color: white;">
-                <center><p>Blue</p></center>
-                </div>
+                <tr>
+                    <th><h2>KERTAS GLOSSY</h2></th>
+                    <?php foreach ($english_color_g as $key): ?>
+                    <th>
+                        <div class="box-print" style="background-color: <?= $key['color']; ?>;">
+                            <?php if ($key['color']=='white' || $key['color'] == 'yellow'): ?>
+                                <center>
+                                    <?php if ($key['color']=='white'): ?>
+                                        <form action="paper.php" method="post">
+                                        <input type="hidden" name="warna" value="<?= $key['color']; ?>">
+                                            <div class="center">
+                                                <button type="submit" style="color: black">
+                                                    <?= $key['color']; ?> <?= $key['types']; ?>
+                                                </button>
+                                            </div>
+                                        </form>
+                                        <?php else: ?>
+                                            <form action="paper.php" method="post">
+                                            <input type="hidden" name="warna" value="<?= $key['color']; ?>">
+                                                <div class="center">
+                                                    <button type="submit" style="color: black">
+                                                        <?= $key['color']; ?>
+                                                    </button>
+                                                </div>
+                                            </form>
+                                    <?php endif ?>
+                                </center>
+                                <?php else: ?>
+                                    <center>
+                                        <form action="paper.php" method="post">
+                                        <input type="hidden" name="warna" value="<?= $key['color']; ?>">
+                                            <div class="center">
+                                                <button type="submit" style="color: black">
+                                                    <?= $key['color']; ?>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </center>
+                            <?php endif ?>
+                        </div>
+                    </th>
+                    <?php endforeach ?>
+                </tr>
             </th>
             <th>
-                <div style="background-color: red; border: 1; width: 132px; height: 132px; color: white;">
-                    <center><p>Red</p></center>
-                </div>
-            </th>
-            <th>
-                <div style="background-color: yellow; border: 1; width: 132px; height: 132px; color: black;">
-                    <center><p>Yellow</p></center>
-                </div>
-            </th>
-            <th>
-                <div style="background-color: black; border: 1; width: 132px; height: 132px; color: white;">
-                    <center><p>Black</p></center>
-                </div>
-            </th>
-            <th>
-                <div style="background-color: white; border: 1; width: 132px; height: 132px; color: black">
-                    <center><p>White</p></center>
-                </div>
+                <tr>
+                    <th><h2>KERTAS MATTE</h2></th>
+                    <?php foreach ($english_color_m as $key): ?>
+                    <th>
+                        <div class="box-print" style="background-color: <?= $key['color']; ?>;">
+                            <?php if ($key['color']=='white' || $key['color'] == 'yellow'): ?>
+                                <center>
+                                    <?php if ($key['color']=='white'): ?>
+                                        <a href="">
+                                            <p style="color: black" class="center">White</p>
+                                        </a>
+                                        <?php else: ?>
+                                            <a href="">
+                                                <p style="color: black" class="center">Yellow</p>
+                                            </a>
+                                    <?php endif ?>
+                                </center>
+                                <?php else: ?>
+                                    <center>
+                                        <a href="">
+                                            <p style="color: white" class="center">
+                                                <?= $key['color']; ?>
+                                            </p>
+                                        </a>
+                                    </center>
+                            <?php endif ?>
+                        </div>
+                    </th>
+                    <?php endforeach ?>
+                </tr>
             </th>
         </tr>
     </table>
