@@ -30,25 +30,25 @@
                 <section class="testimonials">
                     <blockquote>Agus Muhammad Mabrur</blockquote>
 
-                    <img class="avatar" src="img/photo.jpg" title="" atl="" />
+                    <img class="avatar" src="img/photo.jpg" title="" atl="" width="auto" height="100px"/>
                 </section>
 
                 <section class="testimonials">
                     <blockquote>Yogga Aji Pratama</blockquote>
 
-                    <img class="avatar" src="img/yogga.jpeg" title="" atl="" />
+                    <img class="avatar" src="img/yogga.jpeg" title="" atl="" width="auto" height="100px"/>
                 </section>
 
                 <section class="testimonials">
                     <blockquote>Iqbal Gumilar</blockquote>
 
-                    <img class="avatar" src="img/bale.jpg" title="" atl="" />
+                    <img class="avatar" src="img/bale.jpg" title="" atl="" width="auto" height="100px" />
                 </section>
 
                 <section class="testimonials">
                     <blockquote>Dian Lesmana</blockquote>
 
-                    <img class="avatar" src="img/dian.jpeg" title="" atl="" />
+                    <img class="avatar" src="img/dian.jpeg" title="" atl="" width="auto" height="100px"  />
                 </section>
             </center>
         </section><!-- testimonials End -->
