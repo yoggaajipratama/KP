@@ -6,7 +6,7 @@
 		$id = $_POST['id'];
 		$tanggal = date("Y-m-d H:i:s");
 
-		$query = mysqli_query($sql, "UPDATE sKertas SET jml = jml+'$jml', tgl = '$tanggal' WHERE warna_kertas = '$warna' AND jenis = 'Glossy'");
+		$query = mysqli_query($sql, "UPDATE sKertas SET jml = jml+'$jml', tgl = '$tanggal' WHERE warna_kertas = '$warna' AND jenis = 'glossy'");
 		if ($query) {
 			header('Location:../glossy.php');
 		}else{
