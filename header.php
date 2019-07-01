@@ -7,7 +7,6 @@
   <title>Sticker Management | Dashboard</title>
   <link rel="shortcut icon" href="img/logo.png">
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-  <link rel="stylesheet" type="text/css" href="css/paper.css">
   <link rel="stylesheet" type="text/css" href="css/cetak.css">
   <link rel="stylesheet" type="text/css" href="css/kertas.css">
   <link rel="stylesheet" type="text/css" href="css/js/caret.js">
@@ -33,7 +32,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
   <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="Component/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="components/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
