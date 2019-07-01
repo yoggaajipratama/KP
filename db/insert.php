@@ -8,6 +8,7 @@
 		$image = $_FILES['image']['name'];
 		$format = pathinfo($image, PATHINFO_EXTENSION);
 		$id = $nama.$tlp."_".$image;
+		date_default_timezone_set('Asia/Jakarta');
 		$tanggal = date("Y-m-d H:i:s");
 		$temp = $_FILES['image']['tmp_name'];
       
