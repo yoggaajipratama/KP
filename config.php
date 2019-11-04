@@ -8,6 +8,7 @@
 		<?php $_SESSION['username'] = $_POST['username']; ?>
 		<?php header('Location: index.php') ?>
 		<?php else: ?>
-			<h2>GAGAL</h2>
+			<script type="text/javascript">alert('Username dan Password tidak cocok');</script>
+			<?php header('Location: login.php'); ?>
 	<?php endif ?>
 <?php endif ?>
