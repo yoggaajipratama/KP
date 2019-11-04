@@ -95,6 +95,7 @@
         <li class="active"><a href="riwayat.php"><i class="fa fa-history" aria-hidden="true"></i> <span>Riwayat</span></a></li>
         <li class="active"><a href="cetak.php"><i class="fas fa-print" aria-hidden="true"></i> <span>Cetak</span></a></li>
         <li class="active"><a href="tentang.php"><i class="fa fa-info-circle" aria-hidden="true"></i> <span>Tentang</span></a></li>
+        <li class="active"><a href="kerugian.php"><span>Kerugian</span></a></li>
         <li class="active"><a href="logout.php"><span>Logout</span></a></li>
       </ul>
     </section>

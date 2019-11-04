@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.4.1deb2ubuntu2.1
--- http://www.phpmyadmin.net
+-- version 4.9.0.1
+-- https://www.phpmyadmin.net/
 --
--- Host: localhost
--- Generation Time: Jul 01, 2019 at 09:49 AM
--- Server version: 5.7.26-0ubuntu0.16.04.1
--- PHP Version: 7.0.33-7+ubuntu16.04.1+deb.sury.org+1
+-- Host: 127.0.0.1
+-- Waktu pembuatan: 04 Nov 2019 pada 22.37
+-- Versi server: 10.4.6-MariaDB
+-- Versi PHP: 7.3.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -23,7 +25,26 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `dt_stkr`
+-- Struktur dari tabel `admin`
+--
+
+CREATE TABLE `admin` (
+  `id` int(11) NOT NULL,
+  `user` varchar(200) NOT NULL,
+  `pass` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data untuk tabel `admin`
+--
+
+INSERT INTO `admin` (`id`, `user`, `pass`) VALUES
+(2, 'admin', '202cb962ac59075b964b07152d234b70');
+
+-- --------------------------------------------------------
+
+--
+-- Struktur dari tabel `dt_stkr`
 --
 
 CREATE TABLE `dt_stkr` (
@@ -39,7 +60,7 @@ CREATE TABLE `dt_stkr` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `dt_stkr`
+-- Dumping data untuk tabel `dt_stkr`
 --
 
 INSERT INTO `dt_stkr` (`id`, `nama`, `tlp`, `jenis_kertas`, `warna_kertas`, `image`, `status`, `tanggal`, `tahap`) VALUES
@@ -61,7 +82,7 @@ INSERT INTO `dt_stkr` (`id`, `nama`, `tlp`, `jenis_kertas`, `warna_kertas`, `ima
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kerugian`
+-- Struktur dari tabel `kerugian`
 --
 
 CREATE TABLE `kerugian` (
@@ -71,7 +92,7 @@ CREATE TABLE `kerugian` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `kerugian`
+-- Dumping data untuk tabel `kerugian`
 --
 
 INSERT INTO `kerugian` (`id`, `potongan_kertas`, `kerugian_uang`) VALUES
@@ -80,10 +101,10 @@ INSERT INTO `kerugian` (`id`, `potongan_kertas`, `kerugian_uang`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sKertas`
+-- Struktur dari tabel `skertas`
 --
 
-CREATE TABLE `sKertas` (
+CREATE TABLE `skertas` (
   `id` int(11) NOT NULL,
   `warna_kertas` varchar(100) NOT NULL,
   `jml` int(11) NOT NULL,
@@ -92,10 +113,10 @@ CREATE TABLE `sKertas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `sKertas`
+-- Dumping data untuk tabel `skertas`
 --
 
-INSERT INTO `sKertas` (`id`, `warna_kertas`, `jml`, `jenis`, `tgl`) VALUES
+INSERT INTO `skertas` (`id`, `warna_kertas`, `jml`, `jenis`, `tgl`) VALUES
 (1, 'black', 9, 'glossy', '2019-06-30 13:08:01'),
 (2, 'blue', 6, 'glossy', '2019-07-01 08:54:39'),
 (3, 'red', 7, 'glossy', '2019-06-30 13:46:32'),
@@ -112,10 +133,10 @@ INSERT INTO `sKertas` (`id`, `warna_kertas`, `jml`, `jenis`, `tgl`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `sTinta`
+-- Struktur dari tabel `stinta`
 --
 
-CREATE TABLE `sTinta` (
+CREATE TABLE `stinta` (
   `id` int(11) NOT NULL,
   `warna_tinta` varchar(100) NOT NULL,
   `jml` int(11) NOT NULL,
@@ -123,10 +144,10 @@ CREATE TABLE `sTinta` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `sTinta`
+-- Dumping data untuk tabel `stinta`
 --
 
-INSERT INTO `sTinta` (`id`, `warna_tinta`, `jml`, `tgl`) VALUES
+INSERT INTO `stinta` (`id`, `warna_tinta`, `jml`, `tgl`) VALUES
 (1, 'Hitam', 11, '2019-06-30 10:59:26'),
 (2, 'Kuning', 11, '2019-06-30 10:59:31'),
 (3, 'Biru', 11, '2019-06-30 10:59:38'),
@@ -137,48 +158,64 @@ INSERT INTO `sTinta` (`id`, `warna_tinta`, `jml`, `tgl`) VALUES
 --
 
 --
--- Indexes for table `dt_stkr`
+-- Indeks untuk tabel `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indeks untuk tabel `dt_stkr`
 --
 ALTER TABLE `dt_stkr`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `kerugian`
+-- Indeks untuk tabel `kerugian`
 --
 ALTER TABLE `kerugian`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `sKertas`
+-- Indeks untuk tabel `skertas`
 --
-ALTER TABLE `sKertas`
+ALTER TABLE `skertas`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `sTinta`
+-- Indeks untuk tabel `stinta`
 --
-ALTER TABLE `sTinta`
+ALTER TABLE `stinta`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT untuk tabel yang dibuang
 --
 
 --
--- AUTO_INCREMENT for table `kerugian`
+-- AUTO_INCREMENT untuk tabel `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT untuk tabel `kerugian`
 --
 ALTER TABLE `kerugian`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
 --
--- AUTO_INCREMENT for table `sKertas`
+-- AUTO_INCREMENT untuk tabel `skertas`
 --
-ALTER TABLE `sKertas`
+ALTER TABLE `skertas`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+
 --
--- AUTO_INCREMENT for table `sTinta`
+-- AUTO_INCREMENT untuk tabel `stinta`
 --
-ALTER TABLE `sTinta`
+ALTER TABLE `stinta`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+COMMIT;
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

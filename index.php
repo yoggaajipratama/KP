@@ -1,24 +1,6 @@
 <?php include "header.php"; ?>
 <div class="container">
 <?php include 'db/warning.php'; ?>
-<hr style="width: 100%">
-<h2>Kerugian</h2>
-<hr style="width: 100%">
-<table style="width: 300px;" class="table-striped">
-	<tr>
-		<th><b style="text-decoration: underline;">Nomor</b></th>
-		<th><b style="text-decoration: underline;">Sisa ukuran</b></th>
-		<th><b style="text-decoration: underline;">Kerugian</b></th>
-	</tr>
-	<?php $n=1; ?>
-	<?php foreach ($rugi as $key): ?>
-	<tr>
-		<td><?= $n++; ?></td>
-		<td><?= $key['potongan_kertas']; ?></td>
-		<td><?= $key['kerugian_uang']; ?></td>
-	</tr>
-	<?php endforeach ?>
-</table>
 	<hr style="width: 100%">
 	<h2>Sisa Kertas & Tinta</h2>
 	<hr style="width: 100%">
@@ -167,5 +149,45 @@
 		</tr>
 		<?php } ?>
 	</table>
+</div>
+<div class="container">
+	<div class="container-fluid">
+		<H3>TRANSAKSI BELUM SELESAI</H3>
+		<div class="table" style="width: 90%;">
+			<table class="table table-striped" style="width: 100%">
+				<tr>
+					<th>ID transaksi</th>
+					<th style="width: 14%">Tanggal pesanan</th>
+					<th>Nama</th>
+					<th>Nomor telepon</th>
+					<th>Gambar</th>
+					<th>Status</th>
+					<th>Warna kertas</th>
+					<th>Jenis kertas</th>
+					<th>Perkiraan selesai</th>
+					<th>Ubah status</th>
+				</tr>
+				<?php foreach ($status_bselesai as $key): ?>
+					<form action="db/transaksi.php" method="post">
+						<tr>
+							<input type="hidden" name="id" value="<?= $key['id']; ?>">
+							<td><?= $key['id']; ?></td>
+							<td><?= $key['tanggal']; ?></td>
+							<td><?= $key['nama']; ?></td>
+							<td><?= $key['tlp']; ?></td>
+							<td><img width="32px" src="images/<?= $key['image']; ?>"></td>
+							<td><?= $key['status']; ?></td>
+							<td><?= $key['warna_kertas']; ?></td>
+							<td><?= $key['jenis_kertas']; ?></td>
+							<td>~</td>
+							<td>
+								<input type="submit" name="submit" onclick="return confirm('Selesaikan pesanan? ')" value="Selesaikan" class="btn btn-danger">
+							</td>
+						</tr>
+					</form>
+				<?php endforeach ?>
+			</table>
+		</div>
+	</div>
 </div>
 <?php include "footer.php"; ?>
