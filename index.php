@@ -84,9 +84,6 @@
 			</table>
 			</td>
 	</table>
-
-
-	<hr style="width: 100%">
 	<h2>Tambah Gambar</h2>
 	<p>Catatan: Hanya diperuntukkan untuk gambar dengan ukuran kecil dengan max lebar 21 cm (793 pixel) dan tinggi 29,7 cm (1122 pixel) atau standar ukuran kertas A4.</p>
 	<hr style="width: 100%">
