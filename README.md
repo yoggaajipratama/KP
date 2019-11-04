@@ -1,2 +1,2 @@
 # KP
-Sticker Management
+Pengelolaan Bahan Baku Stiker
