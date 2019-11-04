@@ -58,6 +58,7 @@
     <section class="sidebar">
       <ul class="sidebar-menu" data-widget="tree">
         <li class="active"><a href="index.php"><i class="fa fa-home" aria-hidden="true"></i> <span>Beranda</span></a></li>
+        <li class="active"><a href="Pemesanan.php"><i class="fa fa-history" aria-hidden="true"></i> <span>Pemesanan</span></a></li>
          <li class="active treeview">
           <a href="#subjb" aria-expanded="false">
             <i class="fas fa-tools"></i> <span>Jenis Barang</span>
@@ -70,7 +71,6 @@
             <li class="active"><a href="tinta.php"><i class="fa fa-tint"></i> Tinta</a></li>
           </ul>
         </li>
-
         <li class="active treeview">
           <a href="#">
             <i class="far fa-money-bill-alt"></i> <span>Transaksi</span>

@@ -84,6 +84,7 @@
 			</table>
 			</td>
 	</table>
+<<<<<<< HEAD
 	<h2>Tambah Gambar</h2>
 	<p>Catatan: Hanya diperuntukkan untuk gambar dengan ukuran kecil dengan max lebar 21 cm (793 pixel) dan tinggi 29,7 cm (1122 pixel) atau standar ukuran kertas A4.</p>
 	<hr style="width: 100%">
@@ -137,6 +138,8 @@
 			</table>
 		</div>
 	</form>
+=======
+>>>>>>> fb557a827701cbcbaf421ebb517bd4f00997e044
 <h2>Pesanan Masuk</h2>
 	<table class="table" style="background-color: white; width: 90%;"> 
 		<tr>

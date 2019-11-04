@@ -49,18 +49,4 @@
 				<?php endforeach ?>
 			</table>
 		</div>
-		<h3 style="text-decoration: underline;">Prediksi kertas habis</h3>
-		<table class="table table-striped">
-			<tr>
-				<th>Nomor</th>
-				<th>Tanggal</th>
-				<th>Warna</th>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-		</table>
-	</div>
 <?php include 'footer.php'; ?>

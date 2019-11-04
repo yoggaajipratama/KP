@@ -42,11 +42,4 @@
 			</table>
 		</div>
 	</div>
-	<h3> Prediksi Tinta Habis</h3>
-	<table class="table">
-		<tr>
-			<th>Tanggal</th>
-			<th>Warna</th>
-		</tr>	
-	</table>
 <?php include "footer.php"; ?>
